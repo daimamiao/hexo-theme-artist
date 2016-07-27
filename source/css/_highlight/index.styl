@@ -1,0 +1,31 @@
+.highlight
+    margin: 0px
+    display: block
+    overflow-x: auto
+    padding: 12px article-padding
+    font-size: font-size
+    font-family: font-mono
+    line-height: font-size * line-height
+    border: 1px solid #eae0c2
+    table
+        margin: 0
+        width: auto
+        td
+            border: none
+        td.code
+            padding-right: 20px
+    .gutter
+        pre
+            color: #666
+            text-align: right
+            padding-right: 20px
+
+.article-entry
+    .highlight
+        margin: 1.6em 0
+        @media mq-mini
+            margin: 1.6em -20px
+        .line
+            height: 1.6em;
+
+@import "_highlight/" + highlight
