@@ -4,7 +4,7 @@ index:
     archive: 'archive'
     category: 'category'
     uncategorized: 'uncategorized'
-    tag: 'tag'
+    tag: '标签'
 nav:
     next: '下一页'
     prev: '上一页'
