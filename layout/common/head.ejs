@@ -43,6 +43,8 @@
     <% } %>
 
     <%- css('css/style') %>
-    
+    <% if (theme.vendors.jquery) { %>
+        <%- js(theme.vendors.jquery) %>
+    <% } %>
     <%- partial('plugin/scripts', { isHead: true }) %>
 </head>
