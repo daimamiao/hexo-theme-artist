@@ -1,6 +1,7 @@
 #Artist
 
-### The blog theme you may fall in love with, coming to Hexo. [在线预览Preview](http://blog.iamxcc.com/)
+### The blog theme you may fall in love with, coming to Hexo. 
+[在线预览Preview](http://blog.iamxcc.com/)
 #### [View Documentation](https://github.com/iamxcc/hexo-theme-artist/wiki)
 :star: It is strongly recommended that you read the docs before using Icarus.
 
