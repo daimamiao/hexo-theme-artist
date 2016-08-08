@@ -1,6 +1,6 @@
 #Artist
 
-### The blog theme you may fall in love with, coming to Hexo. [Preview](http://ppoffice.github.io/hexo-theme-icarus/)
+### The blog theme you may fall in love with, coming to Hexo. [在线预览Preview](http://blog.iamxcc.com/)
 ![](http://7xveyh.com1.z0.glb.clouddn.com/Screenshot-artist.png)
 
 #### [View Documentation](https://github.com/iamxcc/hexo-theme-artist/wiki)
@@ -12,7 +12,7 @@
 
 A nice place to show yourself. You can add your own information in your site's `_config.yml`
 
-![](http://ppoffice.github.io/hexo-theme-icarus/gallery/profile.png "")
+![](http://7xveyh.com1.z0.glb.clouddn.com/profile.png)
 
 ### Self-hosted Insite Search Engine
 With the help of [Insight Search](https://github.com/ppoffice/hexo-theme-icarus/wiki/Search#insight-search), you can search anything inside your site without any third-party plugin.
