@@ -1,9 +1,9 @@
-#Icarus
+#Artist
 
 ### The blog theme you may fall in love with, coming to Hexo. [Preview](http://ppoffice.github.io/hexo-theme-icarus/)
-![](http://ppoffice.github.io/hexo-theme-icarus/gallery/preview.png "")
+![](http://7xveyh.com1.z0.glb.clouddn.com/Screenshot-artist.png)
 
-#### [View Documentation](https://github.com/ppoffice/hexo-theme-icarus/wiki)
+#### [View Documentation](https://github.com/iamxcc/hexo-theme-artist/wiki)
 :star: It is strongly recommended that you read the docs before using Icarus.
 
 ## Features
