@@ -22,6 +22,14 @@
                 <%- partial('post/title', { post: post, index: true, class_name: 'timeline-article-title' }) %>
                 <div class="article-meta">
                     <%- partial('post/date', { post: post, class_name: 'article-date', date_format: null }) %>
+                    <div class="article-category-img">
+                        <% var j = 0; %>
+                        <% post.categories.sort('name').forEach(function(item){ %>
+                            <% if (j == 0) { %>
+                                <%= item.name[0] %>
+                            <% j = j + 1; } %>
+                        <% }); %>
+                    </div>
                     <%- partial('post/category', { post: post }) %>
                     <!--<%- partial('post/tag', { post: post }) %>-->
                 </div>

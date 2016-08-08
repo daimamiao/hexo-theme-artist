@@ -1,20 +1,27 @@
+
 .article-position-true
     a.article-title
         font-size: 21px
-        @media mq-mini
+        @media mq-mobile
             font-size: 18px
+            line-height: 1em !important
+    .article-img 
+        margin: 0 20px 20px
+        @media mq-mobile
+            margin: 0 12px 6px
     .article-entry 
-        @media mq-mini
+        @media mq-mobile
             padding: 0 13px 13px
-        background: #fcfcfc
+        background: #fafafa
         padding: 22px
         h1, h2, h3, h4, h5, h6
             margin: 0 0 8px
-            @media mq-mini
+            @media mq-mobile
                 margin: 0 0 3px
+                line-height: 0.6em !important
         p
             font-size: 14px
-            color: #888
+            color: #666
             margin:0
             /*overflow:hidden
             text-overflow:ellipsis
@@ -22,7 +29,7 @@
             white-space:nowrap
             width:100%*/
 .article
-    margin: block-margin 0
+    margin-bottom: block-margin
 
 .article-inner
     @extend $block
@@ -34,7 +41,7 @@
 
 .article-header
     padding: article-padding article-padding 0
-    @media mq-mini
+    @media mq-mobile
         padding: 13px 13px 0;
     .article-title
         display: block
@@ -49,11 +56,10 @@
         color: color-default
     a&:hover
         color: color-link
-    @media mq-mini
-        font-size: 1.6em
     @media mq-mobile
         font-size: 1.6em
-
+.article-img 
+    margin-bottom: 20px
 .thumbnail
     overflow: hidden
     width: 100%
@@ -62,7 +68,7 @@
     display: block
     border: 1px solid #f3f3f3 
     border-radius: 3px
-    @media mq-mini
+    @media mq-mobile
         height: 200px
     .thumbnail-image
         display: block
@@ -81,18 +87,32 @@
         color: color-default
         &:hover
             color: color-link
-
+.article-category-img
+    float: left
+    width: 32px
+    height: 32px
+    color: #ffa200
+    font-size: 20px
+    font-weight: 600
+    border-radius: 6px
+    border: 1px solid #ffa200
+    background: #f8f8f8
+    text-align: center
+    line-height: 32px
+    margin-right: 6px
 .article-category
     float: left
-    background: #ffa200
     padding: 2px 6px
-    color: #fff
+    color: #000
+    font-size: 16px
     border-radius: 2px
+    margin-top: 4px
     .article-category-link
-        color: #fff
+        color: #000
     .fa-angle-right
         margin: 0 5px
 .article-date
+    margin-top: 4px
     float: right
     a
         color: #888
@@ -100,13 +120,11 @@
     .tag-link
         border: 1px solid #6ae3ff
         border-radius: 3px
-        padding: 2px 6px
-        &:before
-            content: "#"
+        padding: 5px 10px
 
 .article-entry
-    @media mq-mini
-        padding: 13px
+    @media mq-mobile
+        padding: 0 12px
     @extend $base-style
     clearfix()
     color: color-default
@@ -116,16 +134,16 @@
         line-height: 20px
         margin: 12px 0
     p
-        line-height: line-height
+        line-height: 1.8em
         margin: 16px 0
-        font-size: 16px;
+        font-size: 15px;
         word-wrap: break-word;
 
     h1, h2, h3, h4, h5, h6
         font-weight: bold
     h1, h2, h3, h4, h5, h6
-        line-height: line-height-title
-        margin: line-height-title 0
+        line-height: 1.3em
+        margin: 0 0 line-height-title 0
     a
         color: color-link
         text-decoration: none

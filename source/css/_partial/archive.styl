@@ -7,8 +7,13 @@
 .archive-category-wrap,
 .archive-tag-wrap,
 .layout-title
-    font-size: 1.4em
-    margin: block-margin 0 20px 0
+    font-size: 0.9em
+    margin: 0 0 10px
+    @extend $block
+    display: inline-block
+    padding: 5px 12px
+    border-radius: 2px
+    color: #ffa200
     @media mq-mini
         padding: 0 15px
         font-size: 1.2em
@@ -18,9 +23,6 @@
         color: color-default
         &:hover
             color: color-link
-.layout-wrap-inner
-    @media mq-mini
-        padding: 0 15px
 
 .archive-article
     clearfix()
@@ -87,11 +89,9 @@
 .layout-wrap-inner
     &.list-categories
         ul
-            margin-left: 15px
             list-style: none
             li,
             .category-list-child
-                padding: 10px 0
                 font-size: font-size
                 border-bottom: 1px solid border-color
                 a
@@ -106,7 +106,6 @@
             a
                 &:before
                     color: #ccc
-                    content: "\f0da"
                     font-size: 12px
                     margin-right: 6px
                     font-family: FontAwesome
@@ -116,9 +115,6 @@
     &.tag-cloud
         a
             @extend $link-dark
-            margin-right: 8px
-            &:before
-                content: '#'
 
 #page-nav
     clearfix()

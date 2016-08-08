@@ -1,10 +1,20 @@
-<section class="layout-wrap">
+<section class="layout-wrap" style="overflow:hidden">
     <div class="layout-title">
         <span><%= page.title %></span>
     </div>
-    <div class="layout-wrap-inner list-categories">
-        <% if(site.categories.length) { %>
-            <%- list_categories(site.categories) %>
-        <% } %>
+    <div class="layout-wrap-inner list-categories" style="overflow:hidden">
+    	<ul style="overflow:hidden; position: relative" class="category-list">
+    		<% site.categories.sort('name').each(function(item){ %>
+    		<li class="md-4 sm-4 xs-6 category-list-item">
+    			<a href="<%- config.root %><%- item.path %>">
+                    <div class="category-list-img"><%= item.name.substring(0, 1) %> </div>
+        			<div style="margin-top: 12px">
+                        <div class="category-list-name"><%= item.name %></div>
+                        <div class="category-list-num">共<%= item.posts.length %>篇</div>
+                    </div>
+                </a>
+    		</li>
+	    	<% }); %>
+    	</ul>
     </div>
 </section>

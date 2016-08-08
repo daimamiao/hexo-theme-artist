@@ -1,6 +1,6 @@
 .timeline-wrap
-    margin: 40px 20px 40px 40px
-    border-left: 3px solid color-border
+    margin: 12px 0 0 18px
+    border-left: 2px solid #38b7ea
     @media mq-mini
         margin: 40px 20px 40px 30px
     @media mq-mobile
@@ -8,7 +8,7 @@
 
 .timeline-row
     clearfix()
-    margin: 20px 0
+    margin: 12px 0
     .node,
     .title
         float: left
@@ -42,6 +42,7 @@
         h1,
         .article-meta
             padding: 10px
+            margin-bottom: 0;
         h1
             font-size: 16px
             a
@@ -54,12 +55,17 @@
 
 .timeline-row-major
     .node
-        width: 14px
-        height: 14px
+        width: 30px
+        height: 30px
         font-size: 14px
-        margin: 0 0 0 -17px
-        padding: 6px 8px 10px
+        margin: -6px 0 0 -16px
+        padding: 5px 0 0 8px;
     .title
-        font-size: 18px
-        margin-left: 15px
+        font-size: 14px
+        color: #ffa200
+        margin-left: 12px
+        margin-top: -5px
         line-height: 30px
+        @extend $white-card
+        border-radius: 2px
+        padding: 3px 12px

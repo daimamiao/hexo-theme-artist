@@ -8,15 +8,23 @@
             <header class="article-header">
                 <% if (post.layout != 'page') { %>
                     <div class="article-meta">
+                        <div class="article-category-img">
+                            <% var i = 0; %>
+                            <% post.categories.sort('name').forEach(function(item){ %>
+                                <% if (i == 0) { %>
+                                    <%= item.name[0] %>
+                                <% i = i + 1; } %>
+                            <% }); %>
+                        </div>
                         <%- partial('post/category') %>
                         <%- partial('post/date', { class_name: 'article-date', date_format: null }) %>
-                        
                     </div>
                 <% } %>
-                <%- partial('common/thumbnail.ejs', {post: post}) %>
             </header>
         <% } %>
-
+        <div class="article-img">
+            <%- partial('common/thumbnail.ejs', {post: post}) %>
+        </div>
         
 
         <div class="article-entry" itemprop="articleBody">

@@ -1,5 +1,19 @@
+<% if (theme.vendors.jquery) { %>
+    <%- js(theme.vendors.jquery) %>
+<% } %>
 <%- partial('comment/scripts', { page: page }) %>
 <%- partial('plugin/scripts') %>
 
 <!-- Custom Scripts -->
 <%- js('js/main') %>
+<% if (page.mathjax){ %>
+	<%- partial('plugin/mathjax') %>
+<% } %>
+<script>
+	(function(){
+	    var bp = document.createElement('script');
+	    bp.src = '//push.zhanzhang.baidu.com/push.js';
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+</script>

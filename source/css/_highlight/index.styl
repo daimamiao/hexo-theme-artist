@@ -2,7 +2,7 @@
     margin: 0px
     display: block
     overflow-x: auto
-    padding: 12px article-padding
+    padding: 0 12px
     font-size: font-size
     font-family: font-mono
     line-height: font-size * line-height
@@ -13,18 +13,22 @@
         td
             border: none
         td.code
-            padding-right: 20px
+            padding: 12px
     .gutter
+        border-right: 1px solid #eae0c2
+        padding: 12px 0
         pre
             color: #666
             text-align: right
-            padding-right: 20px
+            padding-right: 12px
 
 .article-entry
     .highlight
         margin: 1.6em 0
-        @media mq-mini
+        @media mq-mobile
             margin: 1.6em -20px
+            border-left: none;
+            border-right: none;
         .line
             height: 1.6em;
 

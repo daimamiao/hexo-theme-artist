@@ -6,6 +6,16 @@
 
 global-reset()
 
+* 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+*:before,
+*:after
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 input, button
     margin: 0
     padding: 0
@@ -32,7 +42,7 @@ code
     margin: 0 2px
     color: #e96900
     padding: 1px 5px
-    font-size: 0.8em
+    font-size: 1.0em
     border-radius: 2px
     font-family: font-mono
     background-color: #f8f8f8
@@ -41,7 +51,7 @@ code
     clearfix()
     max-width: (column-width + gutter-width) * columns + gutter-width
     margin: 0 auto
-    padding: 0 gutter-width
+    padding: 0 0
     @media mq-mini
         padding: 0
 
@@ -65,7 +75,7 @@ code
     position: relative
     & > .outer
         margin-bottom: 30px
-
+        
 #main
     @media mq-normal
         column(main-column)
@@ -74,14 +84,23 @@ code
             column(main-column-tablet)
         else
             width: 100%
+.row-mobile
+    @media mq-mobile
+        margin-left: -10px
+        margin-right: -10px
+        
 
+        
 @import "_extend"
 @import "_partial/header"
 @import "_partial/profile"
 @import "_partial/article"
 @import "_partial/comment"
 @import "_partial/archive"
+@import "_partial/category"
+@import "_partial/tag"
 @import "_partial/timeline"
+@import "_partial/list"
 @import "_partial/footer"
 @import "_partial/sidebar"
 @import "_partial/insight"

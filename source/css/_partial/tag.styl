@@ -1,0 +1,53 @@
+.tag-list
+	.tag-list-item
+		padding: 0 5px 10px 5px
+		height: 108px
+		// @media mq-normal
+		// 	&:nth-child(4n)
+		// 		padding-right: 0
+		// 	&:nth-child(4n+1)
+		// 		padding-left: 0
+		// @media mq-tablet
+		// 	&:nth-child(3n)
+		// 		padding-right: 0	
+		// 	&:nth-child(3n+1)
+		// 		padding-left: 0
+		// @media mq-mobile
+		// 	&:nth-child(3n)
+		// 		padding-right: 0
+		// 	&:nth-child(3n+1)
+		// 		padding-left: 0
+				
+		&:nth-child(6n) a
+			background: #41566f
+		&:nth-child(6n+1) a
+			background: #d6c573
+		&:nth-child(6n+2) a
+			background: #236892
+		&:nth-child(6n+3) a
+			background: #ff2362
+		&:nth-child(6n+4) a
+			background: #ff8f8f
+		&:nth-child(6n+5) a
+			background: #000
+		a
+			border-radius: 6px
+			height: 100%
+			display: block
+			color: #fff !important
+			padding: 8px
+			.tag-list-img
+				width: 36px
+				height: 36px
+				background: #fff
+				border-radius: 36px
+				margin: 8px auto
+				color: #ffa200
+				text-align: center
+				line-height: 36px
+				font-size: 22px
+			.tag-list-name
+				text-align: center
+		&:hover
+			.tag-list-img
+				background: #000

@@ -3,7 +3,7 @@
         <h3 class="widget-title"><%= __('标签') %></h3>
         <div class="widget tagcloud">
         	<a href="/" style="background: #ffa200; color: #fff;">全部</a>	
-            <%- tagcloud() %>
+            <%- tagcloud({amount: 15}) %>
         </div>
     </div>
 <% } %>

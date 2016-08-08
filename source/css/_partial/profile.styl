@@ -7,7 +7,7 @@
     margin-top: 15px
 
 #profile .inner .bio p
-    margin: 5px 20px 10px 20px
+    margin: 0 20px 10px 20px
     text-align: justify
     max-width: 300px
     line-height: 1.5em
@@ -19,13 +19,12 @@
         border-bottom: none
 
 #profile
-    column(profile-column)
+    margin-bottom: 10px
     display: none
     @media mq-normal
         display: block
     .inner
-        @extend $block
-        margin-top: block-margin
+        @extend $white-card
         background: white
         .base-info
             #avatar
@@ -114,12 +113,12 @@
                                 position: absolute
                                 z-index: 2
     &.card
-        top: 50px
+        top: 68px
         right: 20px
         z-index: 999
         display: block
         min-width: 280px
-        position: absolute
+        position: fixed
         .profile-inner
             position: relative
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)

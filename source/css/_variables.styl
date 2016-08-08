@@ -2,12 +2,19 @@
 support-for-ie = false
 vendor-prefixes = webkit moz ms official
 
+//===========================Header===================================
+header-height = 64px
+header-sub-height = 48px
+logo-url = hexo-config("customize.logo.url")
+logo-width = 0px + hexo-config("customize.logo.width")
+logo-height = 0px + hexo-config("customize.logo.height")
+
 // Colors
 color-default = #565a5f
 color-grey = #999
 color-border = #eceff2
 color-link = #38b7ea
-color-background = #f5f8f9
+color-background = #f0f0f0
 color-sidebar-text = #777
 color-sidebar-text-dark = #333
 color-widget-background = #ddd
@@ -20,13 +27,6 @@ font-mono = "Fira Code", "Source Code Pro", Consolas, Monaco, Menlo, Consolas, m
 font-size = 14px
 line-height = 1.9em
 line-height-title = 0.9em
-
-// Header
-header-height = 64px
-header-sub-height = 48px
-logo-url = hexo-config("customize.logo.url")
-logo-width = 0px + hexo-config("customize.logo.width")
-logo-height = 0px + hexo-config("customize.logo.height")
 
 // Sidebar
 sidebar = hexo-config("customize.sidebar")
@@ -68,17 +68,15 @@ if sidebar
     main-column-tablet = 6
     if profile
         main-column-tablet = 9
+//===============================Media queries==========================
+mq-mobile = "screen and (max-width: 768px)"
+mq-tablet = "screen and (min-width: 767px) and (max-width: 991px)"
+mq-normal = "screen and (min-width: 992px)"
 
-// Media queries
-mq-mini = "screen and (max-width: 559px)"
-mq-mobile = "screen and (min-width: 560px) and (max-width: 799px)"
-mq-tablet = "screen and (min-width: 800px) and (max-width: 1199px)"
-mq-normal = "screen and (min-width: 1200px)"
-
-// Code Highlight
+//===============================Code Highlight=========================
 highlight = hexo-config("customize.highlight") || "tomorrow"
 
-// Miscellaneous
+//===============================Miscellaneous==========================
 color-twitter = #00aced
 color-facebook = #3b5998
 color-pinterest = #cb2027

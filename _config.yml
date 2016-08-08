@@ -1,10 +1,10 @@
 # Menus
 menu:
-  Home: .
-  Archives: archives
-  Categories: categories
-  Tags: tags
-  About: about
+  归档: archives
+  分类: categories
+  标签: tags
+  使用说明: documentation
+  关于: about
 
 # Customize
 customize:
@@ -14,33 +14,54 @@ customize:
         height: 40
         url: images/logo.png
     profile:
-        enabled: false # Whether to show profile bar
-        avatar: css/images/avatar.png
+        enabled: true # Whether to show profile bar
+        avatar: css/images/avatar1.png
         gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
         author: xcc
         author_title: Web Developer & Designer
-        location: Harbin, China
-        follow: https://github.com/ppoffice/
+        location: GuangDong, China
+        follow: https://github.com/iamxcc/
     highlight: solarized-light
     sidebar: right # sidebar position, options: left, right
     thumbnail: true # enable posts thumbnail, options: true, false
     favicon: # path to favicon
     social_links:
         github: http://github.com/ppoffice/hexo-theme-icarus
-        twitter: /
-        facebook: /
-        dribbble: /
-        rss: /
+        知乎: https://www.zhihu.com/people/iamxcc
+        V2EX: https://www.v2ex.com/member/ybzbxcc
+        简书: http://www.jianshu.com/users/a820fe80f428/timeline
+        rss: /atom.xml
+    social_icons:
+        github: github
+        知乎: bookmark
+        V2EX: codepen
+        简书: book
+        rss: rss
+
+
     social_link_tooltip: true # enable the social link tooltip, options: true, false
 
 # Widgets
 widgets:
     - tagcloud
+    - series
     - recent_posts
     # - category
-    - archive
+    # - archive
     # - tag
     - links
+
+# Series
+series:
+    Sublime:
+        image_url: http://7xveyh.com1.z0.glb.clouddn.com/sublime-text-mastery.jpg
+        title: 优雅的Sublime
+    LeetCode: 
+        image_url: http://7xveyh.com1.z0.glb.clouddn.com/2013111315172517727.jpg
+        title: LeetCode题解
+    算法: 
+        image_url: http://7xveyh.com1.z0.glb.clouddn.com/2016080413315664241_640x360.jpeg
+        title: 有趣的算法
 
 # Search
 search:
@@ -60,9 +81,15 @@ share: default # options: jiathis, bdshare, addtoany, default
 # Plugins
 plugins:
     fancybox: true # options: true, false
-    google_analytics: # enter the tracking ID for your Google Analytics
+    google_analytics: #UA-82072441-1 # enter the tracking ID for your Google Analytics
     google_site_verification: # enter Google site verification code
-    baidu_analytics: # enter Baidu Analytics hash key
+    baidu_analytics: true # enter Baidu Analytics hash key
+
+# Script Vendors.
+# Set a CDN address for the vendor you want to customize.
+vendors:
+    jquery: //cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js
+    fontawesome: //maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css
 
 # Miscellaneous
 miscellaneous:
@@ -73,3 +100,13 @@ miscellaneous:
         google_plus:
     links:
         Hexo: http://hexo.io
+        个人V2EX主页: http://www.v2ex.com/?r=ybzbxcc
+
+# ---------------------------------------------------------------
+# Third Party Services Settings 
+# ---------------------------------------------------------------
+
+# MathJax Support
+mathjax:
+  enable: true
+  cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML

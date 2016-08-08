@@ -1,0 +1,6 @@
+<% for (var i in theme.series) { %>
+	<a class="widget-series" href="/categories/<%= i %>/">
+		<img src="<%- theme.series[i].image_url %>" alt="">
+		<div class="series-title"><%- theme.series[i].title %></div>
+	</a>
+<% } %>

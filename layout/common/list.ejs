@@ -1,0 +1,32 @@
+<div class="layout-wrap">
+	<h1 class="layout-title">
+		<% if (theme.series[page.category]) { %>
+			<%= theme.series[page.category].title %>
+		<% } else {%>
+			<%= page.category %>
+		<% } %>
+	</h1>
+	<div class="layout-wrap-inner list" id="list">
+		<% page.posts.each(function (post, i) { %>
+			<a class="list-item" href="<%- url_for(post.path) %>">
+				<span class="list-item-num"><%= i+1+'.' %></span>
+				<span class="list-item-title">
+					<%= post.title %>
+				</span>
+				<span class="list-item-date">
+					<% if (post.date) { %>
+		<time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, null) %></time>
+					<% } %>
+				</span>
+	       </a>
+		<% }); %>
+	</div>
+</div>
+<% if (page.total > 1) { %>
+    <nav id="page-nav">
+        <%- paginator({
+            prev_text: '&laquo; ' + __('nav.prev'),
+            next_text: __('nav.next') + ' &raquo;'
+        }) %>
+    </nav>
+<% } %>

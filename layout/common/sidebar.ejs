@@ -1,6 +1,14 @@
-<aside id="sidebar">
-   <% theme.widgets.forEach(function(widget) { %>
-        <%- partial('widget/' + widget) %>
-    <% }) %>
-    <div id="toTop" class="fa fa-angle-up"></div>
+<aside id="sidebar" class="md-4 sm-4">
+	<div class="row-mobile">
+		<% if (theme.customize.profile.enabled) { %>
+            <%- partial('common/profile', null, {cache: !config.relative_link}) %>
+        <% } %>
+		<% theme.widgets.forEach(function(widget) { %>
+        	<%- partial('widget/' + widget) %>
+	    <% }) %>
+	    <% if (!isNaN(type.substring(0, 4))) { %>
+	    	<%- partial('widget/toc') %>
+		<% } %>
+    	<div id="toTop" class="fa fa-angle-up"></div>
+	</div>
 </aside>
